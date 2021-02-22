@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link to Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- link to CSS file -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- link to Google Font Raleway -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;600&display=swap" rel="stylesheet">
+    <!-- link to Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>Form</title>
+</head>
+
+<body>
+
+    <!-- using Bootstrap jumbotron for the header -->
+    <div class="jumbotron"><img src="assets/images/logo.png"></div>
+
+    <!-- Bootstrap container -->
+    <div class="container">
+        <div class="row">
+            <!-- a div to hold the paragraph and hr for the top -->
+            <div class="col-lg-12">
+                <p>Please enter the following information</p>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- Bootstrap form -->
+                <form>
+                    <div class="row mb-3">
+                        <!-- label for the ssn input -->
+                        <label for="ssn-input" class="col-sm-2 col-form-label">ssn (last 4) xxx-xx-</label>
+                        <!-- text box for the ssn -->
+                        <div class="col-sm-5">
+                            <input type="text" id="ssn-input" class="form-control ssn-box" placeholder="xxxx">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <!-- label for the dob input -->
+                        <label for="dob-input" class="col-sm-2 col-form-label">date of birth</label>
+                        <div class="col-sm-5">
+                            <!-- text box for the dob, including the icon for the calendar -->
+                            <div class="input-group mb-3">
+                                <input type="text" id="dob-input" class="form-control dob-box" placeholder="mm/dd/yyyy">
+                                <label class="input-group-text icon" for="date"><i
+                                        class="bi bi-calendar-date"></i></label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- submit button -->
+                    <button type="submit" id="submit" class="btn btn-primary btn-lg" disabled>SUBMIT</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- link to jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--link to javascript file -->
+    <script type="text/javascript" src="assets/javascript/submit.js"></script>
+
+</body>
+
+</html>
